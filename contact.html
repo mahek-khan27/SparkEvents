@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - SparkEvents.in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="container">
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<footer>
+    <p>
+        For more reference:
+        <a href="https://www.weddingwire.in" style="#80002a" target="_blank">
+            WeddingWire – Event Ideas & Photos
+        </a>
+    </p>
+</footer>
+
+<script>
+    // Get the form element
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent page reload
+        alert('Thank you!! Your request has been sent.'); // Show confirmation message
+        form.reset(); // Optional: clear the form fields
+    });
+</script>
+
+</body>
+</html>
